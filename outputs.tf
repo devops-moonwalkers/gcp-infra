@@ -1,21 +1,23 @@
-output "vpc_name" {
-  value = google_compute_network.vpc_network.name
-}
-output "vpc_selflink" {
-  value = "${google_compute_network.vpc_network.self_link}"
-}
-output "subnet_selflink" {
-  value = "${google_compute_subnetwork.gke_private_subnet.self_link}"
-}
-output "subnet_id" {
-  value = "${google_compute_subnetwork.gke_private_subnet.id}"
-}
 output "id" {
-  value = "${google_container_cluster.primary_cluster.id}"
+  value       = google_project.project.project_id
+  description = "GCP project ID"
 }
-output "endpoint" {
-  value = "${google_container_cluster.primary_cluster.endpoint}"
+
+output "number" {
+  value       = google_project.project.number
+  description = "GCP project number"
+  sensitive   = true
 }
-output "master_version" {
-  value = "${google_container_cluster.primary_cluster.master_version}"
+output "bucket_name" {
+  value = google_storage_bucket.state.name
+}
+
+output "addresses" {
+  description = "Global IPv4 address for proxy load balancing to the nearest Ingress controller"
+  value       = google_compute_address.regional_external_ip.address
+}
+
+output "name" {
+  description = "Static IP Name"
+  value       = google_compute_address.regional_external_ip.name
 }
