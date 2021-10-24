@@ -1,10 +1,10 @@
-locals {
-  project_id = "${var.project_name}"
-}
+#locals {
+#  project_id = "${var.project_name}"
+#}
 
 resource "google_project" "project" {
-  name                = var.project_name
+  name                = var.gcp_project_id
   billing_account     = var.billing_account
-  project_id          = local.project_id
+  project_id          = var.gcp_project_id
   auto_create_network = var.auto_create_network
 }
