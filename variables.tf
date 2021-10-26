@@ -6,46 +6,25 @@ variable "gcp_region" {
 
 variable "gcp_project_id" {
   type        = string
-  description = "The newly created GCP project ID"
+  description = "The GCP Seeding project ID"
+  default     = ""
 }
-
 variable "billing_account" {
-  type        = string
-  description = "The GCP billing account "
+  description = "The billing account ID for this project"
 }
 
-variable "org" {
-  type = string
-}
-variable "product" {
-  type = string
-}
-variable "environment" {
-  type = string
-}
-
-# variables used to create VPC
-
-variable "network_cidr" {
-  type = string
-}
-variable "pods_cidr" {
-  type = string
-}
-variable "pods_cidr_name" {
-  type = string
-}
-variable "services_cidr" {
-  type = string
-}
-variable "services_cidr_name" {
-  type = string
+variable "project_name" {
+  description = "The human readable project name (min 4 letters)"
 }
 
 variable "auto_create_network" {
-  type = string
+  description = "If a default network is to be created. True or False"
+}
+variable "bucket_name" {
+  description = "The name of the bucket."
 }
 
 variable "storage_class" {
-  type = string
+  description = "Bucket storage class"
+  default     = "MULTI_REGIONAL"
 }
