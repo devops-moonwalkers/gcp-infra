@@ -1,12 +1,11 @@
-gcp_project_id      = "tobedecided"
+gcp_project_id      = "ycit021-project"
 gcp_region          = "us-central1"
-billing_account     = "tobedecided"
+billing_account     = "012C1B-AF22C3-2D5F1E"
 auto_create_network = "false"
-bucket_name         = "devops-temp-statebucket"
 storage_class       = "Standard"
 
-org            = "nicolas"
-product        = "notepad"
+org            = "ycit021"
+product        = "project"
 environment    = "dev"
 
 #subnet vars
@@ -20,7 +19,7 @@ enable_private_nodes   = "true"
 master_ipv4_cidr_block = "172.16.0.0/28"
 pods_range_name        = "pods"
 services_range_name    = "services"
-kubernetes_version     = "1.20.8-gke.700"
+kubernetes_version     = "1.20.10-gke.1600"
 #pool specifc
 gke_pool_node_count   = "1"
 gke_pool_image_type   = "COS"

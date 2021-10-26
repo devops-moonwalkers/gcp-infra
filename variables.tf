@@ -42,10 +42,6 @@ variable "services_cidr_name" {
   type = string
 }
 
-variable "bucket_name" {
-  type = string
-}
-
 variable "auto_create_network" {
   type = string
 }

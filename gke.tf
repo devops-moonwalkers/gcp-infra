@@ -53,7 +53,7 @@ resource "google_container_cluster" "primary_cluster" {
 }
 
 #Node Pool Resource
-resource "google_container_node_pool" "custom-node_pool" {
+resource "google_container_node_pool" "preemptible-node_pool" {
   provider = google-beta
   
   name       = "main-pool"
@@ -68,6 +68,7 @@ resource "google_container_node_pool" "custom-node_pool" {
     auto_upgrade = true
   }
   node_config {
+    preemptible  = true
     image_type   = var.gke_pool_image_type
     disk_size_gb = var.gke_pool_disk_size_gb
     disk_type    = var.gke_pool_disk_type
