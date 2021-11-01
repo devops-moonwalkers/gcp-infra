@@ -11,17 +11,20 @@ variable "gcp_project_id" {
 
 variable "billing_account" {
   type        = string
-  description = "The GCP billing account "
+  description = "The GCP billing account"
 }
 
 variable "org" {
   type = string
+  default = "ycit021"
 }
 variable "product" {
   type = string
+  default = "project"
 }
 variable "environment" {
   type = string
+  default = "dev"
 }
 
 # variables used to create VPC
