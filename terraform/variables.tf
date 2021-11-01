@@ -6,7 +6,7 @@ variable "gcp_region" {
 
 variable "gcp_project_id" {
   type        = string
-  description = "The newly created GCP project ID"
+  description = "Your GCP project ID"
 }
 
 variable "org" {
