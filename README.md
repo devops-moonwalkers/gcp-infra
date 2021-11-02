@@ -36,7 +36,7 @@
     ```jsx
     terraform init
     ```
-    
+
 9. plan and apply
 
 ## Setting up K8s locally
