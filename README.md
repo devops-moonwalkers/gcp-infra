@@ -25,7 +25,7 @@
       }
     }
     ```
-7. Create a file called `terraform.tfvars` that will contain your local variable definitions.
+7. Create a file called `terraform.tfvars` that will contain your local variable definitions. Example `terraform.tfvars` file:
     
     ```jsx
     gcp_project_id = "devops-practices-and-tools"
