@@ -31,6 +31,7 @@
 
     ```jsx
     gcp_project_id = "devops-practices-and-tools"
+    gcp_region = "us_central1"
     ```
 
 8. Verify that your Terraform configuration is valid
