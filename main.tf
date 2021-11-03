@@ -9,7 +9,7 @@ provider "google-beta" {
 }
 
 module "moonwalkers-gke" {
-  source  = "app.terraform.io/hilmaja/moonwalkers-gke/gcp"
+  source  = "app.terraform.io/moonwalkers/moonwalkers-gke/gcp"
   version = "1.0.1"
   gcp_project_id = "devops-practices-and-tools"
   gcp_region = "us-central1"
