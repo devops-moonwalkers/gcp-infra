@@ -1,3 +1,7 @@
+# GKE Module
+
+This module provisions an example GKE cluster on Google Cloud Platform
+
 <!-- BEGIN_TF_DOCS -->
 
 ![diagram](diagram.png)
