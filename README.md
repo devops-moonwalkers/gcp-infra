@@ -13,7 +13,7 @@
 5. Locally on your computer, clone the gcp-infra repo (if you haven't yet)
 
     ```jsx
-    git clone xxxx
+    git clone git@github.com:devops-moonwalkers/gcp-infra.git
     cd gcp-infra
     ```
 
