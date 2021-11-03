@@ -12,5 +12,5 @@ module "moonwalkers-gke" {
   source  = "app.terraform.io/hilmaja/moonwalkers-gke/gcp"
   version = "1.0.0"
   gcp_project_id = "devops-practices-and-tools"
-  gcp_region = "us_central1"
+  gcp_region = "us-central1"
 }

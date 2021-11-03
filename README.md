@@ -2,11 +2,11 @@
 1. If you don't have it yet, install gcloud [https://cloud.google.com/sdk/docs/install](https://cloud.google.com/sdk/docs/install)
 2. In GCP, create a new project that you'll use for our Terraform infrastructure. 
 3. In that project, create a service account and authenticate terraform to GCP - see the [Add Credentials section](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#adding-credentials)
-4. In that project, create a Cloud Storage bucket called 
+4. In that project, [create a Cloud Storage bucket](https://cloud.google.com/storage/docs/creating-buckets). Set the bucket name to something unique, for example
 
-    *devops-temp-statebucket-yourname*
+    `devops-temp-statebucket-yourname`
 
-    - Select region `us-central1`
+    **Note**: When creating a bucket, be careful the select the same region that you will use in your Terraform configuration.
 
     [See here on how to create a bucket](https://cloud.google.com/storage/docs/creating-buckets)
 
@@ -17,7 +17,7 @@
     cd gcp-infra
     ```
 
-6. Update the [backend.tf](http://backend.tf) file to contain your bucket name (from 3)
+6. Update the [backend.tf](http://backend.tf) file to contain your bucket name (from step 4)
 
     ```jsx
     terraform {
