@@ -49,7 +49,3 @@ All the profiles configuration (see [about minikube profiles](https://faun.pub/u
 This folder along with the ~/.minikube/config/config.json file contain everything you need to know about the Minikube profiles in your local environment
 
 For more information on how K8s can be installed locally, see [4 ways to run Kubernetes locally](https://opensource.com/article/20/11/run-kubernetes-locally)
-
-## Allow Terraform user to access GCP
-
-## Running GKE from terraform
