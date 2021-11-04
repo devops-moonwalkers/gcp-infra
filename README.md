@@ -64,7 +64,14 @@
 9.  Verify that your Terraform configuration is valid
 
     ```jsx
-    terraform init
+        gcloud auth login
+        gcloud config configurations list
+        set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\soodsh1\Documents\McGill\sem5\service-account.json
+        set TF_CLI_CONFIG_FILE=C:\Users\soodsh1\Documents\McGill\sem5\terraform.rc
+        terraform init
+        terraform init -reconfigure
+        terraform plan
+        terraform apply
     ```
 
 10. plan and apply. This can take ~10 minutes.
