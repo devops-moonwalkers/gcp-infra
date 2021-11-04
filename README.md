@@ -7,7 +7,7 @@
 
 2.  In GCP, create a new project that you'll use for our Terraform infrastructure.
 
-3.  In that project, create a service account and authenticate terraform to GCP - see the [Add Credentials section](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#adding-credentials)
+3.  In that project, create a service account (ensure to use Storage Admin as a role) and authenticate terraform to GCP - see the [Add Credentials section](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/getting_started#adding-credentials)
 
         For Windows:
         - Open the Start Search, type in `env`, and choose `Edit the system environment variables`
