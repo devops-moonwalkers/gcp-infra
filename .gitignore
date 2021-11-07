@@ -1,3 +1,6 @@
+*.tfvars
+*.json
+.terraformrc
 .terraform.*
 .terraform
 terraform.tfstate*
