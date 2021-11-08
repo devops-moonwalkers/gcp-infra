@@ -74,6 +74,8 @@
         terraform apply
     ```
 
+        Ensure the paths above is changed depending where you stored your files.
+
 10. plan and apply. This can take ~10 minutes.
 
 > **Troubleshooting:** If any errors occur, follow error output. You may need to enable API services manually on GCP UI console.
