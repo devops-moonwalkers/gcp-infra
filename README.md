@@ -74,7 +74,7 @@
         terraform apply
     ```
 
-        Ensure the paths above is changed depending where you stored your files.
+Ensure the paths above are changed depending where you stored your files.
 
 10. plan and apply. This can take ~10 minutes.
 
