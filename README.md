@@ -94,3 +94,12 @@ All the profiles configuration (see [about minikube profiles](https://faun.pub/u
 This folder along with the ~/.minikube/config/config.json file contain everything you need to know about the Minikube profiles in your local environment
 
 For more information on how K8s can be installed locally, see [4 ways to run Kubernetes locally](https://opensource.com/article/20/11/run-kubernetes-locally)
+
+## Code review guidelines for Terraform code
+
+Here are the things you shoud look for:
+* all variables have a default value. Only specific variables for our personal environments should be left without a default.
+* there is a description for each variable.
+* terraform.tfvars should not be commited to the repository.
+* the outputs reflect the information of what is created.
+* the code needs to be linted
