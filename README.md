@@ -100,6 +100,7 @@ For more information on how K8s can be installed locally, see [4 ways to run Kub
 Here are the things you shoud look for:
 * all variables have a default value. Only specific variables for our personal environments should be left without a default.
 * there is a description for each variable.
+* no variable value that is user specific should be hardcoded.
 * terraform.tfvars should not be commited to the repository.
 * the outputs reflect the information of what is created.
-* the code needs to be linted
+* the code needs to be linted.
