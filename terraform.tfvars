@@ -1,2 +1,2 @@
-gcp_project_id = "devops-practices-and-tools"
+gcp_project_id = "celestial-sum-332017"
 gcp_region = "us-central1"
