@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "devops-temp-statebucket-sonja"
+    bucket = "devops-moonwalkers-testbucket"
     prefix = "state"
   }
 }
