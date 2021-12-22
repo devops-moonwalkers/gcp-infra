@@ -104,3 +104,32 @@ Here are the things you shoud look for:
 * terraform.tfvars should not be commited to the repository.
 * the outputs reflect the information of what is created.
 * the code needs to be linted.
+
+## Terratest : Steps to test a sample gcp terraform infra
+
+1. Open Google Cloud SDK shell
+
+2. Login to your gcp console
+   ```jsx
+   gcloud auth login 
+   ```
+3. Set your GOOGLE_CLOUD_PROJECT. For example:
+   ```jsx
+   set GOOGLE_CLOUD_PROJECT=terraform-gcp-demo-330613
+   ```
+4. Set GOOGLE_APPLICATION_CREDENTIALS. For example:
+   ```jsx
+   set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\soodsh1\Documents\McGill\sem5\service-account.json
+   ```
+5. Also set TF_CLI_CONFIG_FILE. For example:
+   ```jsx
+   set TF_CLI_CONFIG_FILE=C:\Users\soodsh1\Documents\McGill\sem5\terraform.rc
+   ```
+
+6. Now to run a gcp test case
+   ```jsx
+   cd terratest\test\gcp
+   go test -v terraform_gcp_example_test.go
+   ```
+
+
